@@ -1,0 +1,823 @@
+
+body { 
+  color: #FDFEFE;
+  /* background-color: #1A5276;* */
+  background: linear-gradient(to right,#1A5276, #1A5276, #1B2631);
+  font-family: Trebuchet MS !important;
+  font-size: 12px;
+  margin: 0 !important;
+ 
+}
+
+.c_r_showRank {
+   /* top: 0; */
+}
+
+#c_RANK_update_GOD {
+  width: 720px;
+  background-color: #1B2631;   
+  border: 1px solid #5D6D7E;
+}
+
+#c_RANK_update {
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  
+  width: 720px;
+  /* height: 120px; */
+  /* height: 100%; */
+  /* border: 1px solid #5D6D7E; */ 
+  /* background-color: #1B2631; */
+}
+
+#c_RANK_update > #r_RANK_pos { order: 1; }
+#c_RANK_update > #r_RANK_pts { order: 2; }
+#c_RANK_update > #r_RANK_img { order: 3; }
+#c_RANK_update > #r_RANK_lut { order: 4; }
+
+#r_RANK_pos {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  align-content: center;
+  width: 70px;
+  /* border: 1px solid orange; */
+  height: 110px;
+}
+#id_pos {
+  /* background-color: green; */
+  font-size: 46px;
+  margin-top: 20px;
+}
+#id_pos_up {
+  /* background-color: green; */
+  /* margin-bottom: 10px; */
+}
+
+
+#r_RANK_pts {
+  width: 290px;
+  /* border: 1px solid orange; */
+  height: 110px;
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-end; */
+}
+
+#c_RANK_col2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 267px;
+  height: 85px;
+  /* background-color: green; */
+  flex-wrap: wrap;
+  margin: auto;
+}
+#c_RANK_col2 > #id_nick    { order: 1; }
+#c_RANK_col2 > #id_pontos  { order: 2; }
+#c_RANK_col2 > #id_boneco  { order: 3; }
+#c_RANK_col2 > #id_rankcfn { order: 4; }
+
+#id_nick {
+  background-color: #34495E;
+  width: 262px;
+  height: 24px;
+  border-radius: 5px; 
+  
+  padding-left: 5px;
+  
+  display: flex;
+  align-items: center;
+  
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFF00;
+}
+
+#id_pontos {
+  background-color: #34495E;
+  width: 154px;
+  height: 24px;
+  border-radius: 5px; 
+  
+  padding-left: 5px;
+  padding-right: 5px;
+  
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+}
+
+#id_pontos_New {
+  
+}
+
+#id_pontos_Old {
+  color: #B3B6B7;
+}
+
+
+#id_boneco {
+  background-color: #34495E;
+  width: 99px;
+  height: 24px;
+  border-radius: 5px; 
+  
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#id_rankcfn {
+  background-color: #34495E;
+  width: 262px;
+  height: 24px;
+  border-radius: 5px; 
+ 
+  padding-left: 5px;
+  
+  display: flex;
+  align-items: center;
+}
+
+
+
+#r_RANK_img {
+  display: flex;
+  align-items: center;
+  width: 190px;
+  /* border: 1px solid orange; */
+  height: 110px;
+}
+#id_img {
+  background-color: #34495E;
+  width: 166px;
+  height: 80px;
+  margin: auto;
+  border-radius: 5px; 
+
+  background-size: 127px 59px, 100px 82px;
+  background-repeat: no-repeat;
+  background-position: top right, bottom left;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+#id_img_player {
+  padding-bottom: 5px;
+  padding-right: 10px;
+}
+
+
+#r_RANK_lut {
+  display: flex;
+  align-items: center;
+  width: 170px;
+  height: 110px;
+  /* border: 1px solid orange; */
+}
+
+#c_RANK_col4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 142px;
+  height: 82px;
+  /* background-color: green; */
+  flex-wrap: wrap;
+  margin: auto;
+}
+#c_RANK_col4 > #id_lut_tit { order: 1; }
+#c_RANK_col4 > #id_lut_pts { order: 2; }
+#c_RANK_col4 > #id_vit_tit { order: 3; }
+#c_RANK_col4 > #id_vit_pts { order: 4; }
+#c_RANK_col4 > #id_der_tit { order: 5; }
+#c_RANK_col4 > #id_der_pts { order: 6; }
+#c_RANK_col4 > #id_apr_tit { order: 7; }
+#c_RANK_col4 > #id_apr_pts { order: 8; }
+
+#id_lut_tit,
+#id_vit_tit,
+#id_der_tit,
+#id_apr_tit  {
+  /* text-align: right; */
+  padding-right: 5px;  
+  background-color: #34495E;
+  /* border: 1px solid #1B2631; */
+  border-radius: 5px;
+  width: 70px;
+  height: 18px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#id_lut_pts,
+#id_vit_pts,
+#id_der_pts,
+#id_apr_pts {
+  /* text-align: left; */
+  padding-left: 5px;
+  background-color: #34495E;
+  /* border: 1px solid #1B2631; */
+  border-radius: 5px;
+  width: 60px;
+  height: 18px;
+  
+  display: flex;
+  align-items: center;
+}
+
+#id_vit_tit,
+#id_vit_pts{
+  color: #58D68D;
+}
+
+#id_der_tit,
+#id_der_pts{
+  color: #F5B041;
+}
+
+
+/* INPUTS # # # # # # # # # # # # # # # # # # # # # # # # #  */
+
+#THE_GOD_FORM {
+    display: none;
+}
+
+/* INPUT NICK */
+
+.c_r_nick_box {
+    position: relative;
+    background: none;  
+    --COR-BORDA: #5D6D7E; 
+}
+.c_r_nick_box input {
+    padding-left: 63px;
+    font-size: 14px;
+    width: 250px;   
+    height: 35px;
+    /* padding: 50px 0 0 0; */
+    /* padding-top: 2px;  */
+    color: #FFFF00;
+    font-weight: bold;
+    background-color: black;
+    border: 1px solid var(--COR-BORDA);   
+    border-radius: 5px 5px 5px 5px;
+    /* left-top, right-top, right-bot, left-bot */
+}
+
+.c_r_nick_box input:focus {
+    outline: 0;
+}
+
+.c_r_nick_box span {	
+    position: absolute;
+    left: 0;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 9px; /* DONT CHANGE */ 
+    background-color: #1B2631;
+    border: 1px solid var(--COR-BORDA); /*  #FFFF00 */
+    border-radius: 5px 0px 0px 5px;
+    /* left-top, right-top, right-bot, left-bot */
+    width: 50px;
+    height: 24px;
+}
+
+
+/* INPUT LUTAS */
+
+.c_r_lutas_box {
+    position: relative;
+    background: none;  
+    --COR-BORDA: #5D6D7E;  
+}
+.c_r_lutas_box input {
+    padding-left: 65px; 			 /* * * * * *ALTERAR */
+    font-size: 14px;
+    width: 110px; 					/* * * * * *ALTERAR */
+    height: 35px;
+    color: #FFFF00;
+    font-weight: bold;
+    background-color: black;
+    border: 1px solid var(--COR-BORDA);   
+    border-radius: 5px 5px 5px 5px;
+    /* left-top, right-top, right-bot, left-bot */
+}
+
+.c_r_lutas_box input:focus {
+    outline: 0;
+}
+
+.c_r_lutas_box span {	
+    position: absolute;
+    left: 0px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 9px;  
+    background-color: #1B2631;
+    border: 1px solid var(--COR-BORDA); /*  #FFFF00 */
+    border-radius: 5px 0px 0px 5px;
+    /* left-top, right-top, right-bot, left-bot */
+    width: 55px;  					/* * * * * *ALTERAR */
+    height: 24px;
+}
+
+
+/* INPUT PONTOS */
+
+#c_BLOCO_drop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 720px;
+}
+#c_BLOCO_drop > #r_nick   { order: 1; }
+#c_BLOCO_drop > #r_player { order: 2; }
+#c_BLOCO_drop > #r_boneco { order: 3; }
+#c_BLOCO_drop > #r_nivel  { order: 4; }
+
+#c_BLOCO {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 720px; /* TAMANHO MAXIMO */
+}
+
+#c_BLOCO > #r_pontos     { order: 1; }
+#c_BLOCO > #r_rankcfn    { order: 2; }
+#c_BLOCO > #r_rankHidden { order: 3; }
+#c_BLOCO > #r_lutas      { order: 4; }
+#c_BLOCO > #r_vitorias   { order: 5; }
+#c_BLOCO > #r_derrotas   { order: 6; }
+#c_BLOCO > #r_aprov      { order: 7; }
+#c_BLOCO > #r_pontosA    { order: 8; }
+
+
+#c_BLOCO_nick {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 720px; /* TAMANHO MAXIMO */
+}
+
+/* #c_BLOCO_nick > #r_pontos     { order: 2; } */
+/* #c_BLOCO_nick > #r_rankcfn    { order: 3; } */
+/* #c_BLOCO_nick > #r_rankHidden { order: 4; } */
+
+
+.c_r_pontos_box {
+    position: relative;
+    background: none;  
+    --COR-BORDA: #5D6D7E;  
+}
+.c_r_pontos_box input {
+    padding-left: 75px; 			 /* * * * * *ALTERAR */
+    font-size: 14px;
+    width: 130px; 					/* * * * * *ALTERAR */
+    height: 35px;
+    color: #FFFF00;
+    font-weight: bold;
+    background-color: black;
+    border: 1px solid var(--COR-BORDA);   
+    border-radius: 5px 5px 5px 5px;
+    /* left-top, right-top, right-bot, left-bot */
+}
+
+.c_r_pontos_box input:focus {
+    outline: 0;
+}
+
+.c_r_pontos_box span {	
+    position: absolute;
+    left: 0px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 9px;  
+    background-color: #1B2631;
+    border: 1px solid var(--COR-BORDA); /*  #FFFF00 */
+    border-radius: 5px 0px 0px 5px;
+    /* left-top, right-top, right-bot, left-bot */
+    width: 65px;  					/* * * * * *ALTERAR */
+    height: 24px;
+}
+
+/* INPUT VITORIAS */
+
+.c_r_vitorias_box {
+    position: relative;
+    background: none;  
+    --COR-BORDA: #5D6D7E;  
+}
+.c_r_vitorias_box input {
+    padding-left: 85px; 			 /* * * * * *ALTERAR */
+    font-size: 14px;
+    width: 130px; 					/* * * * * *ALTERAR */
+    height: 35px;
+    color: #FFFF00;
+    font-weight: bold;
+    background-color: black;
+    border: 1px solid var(--COR-BORDA);   
+    border-radius: 5px 5px 5px 5px;
+    /* left-top, right-top, right-bot, left-bot */
+}
+
+.c_r_vitorias_box input:focus {
+    outline: 0;
+}
+
+.c_r_vitorias_box span {	
+    position: absolute;
+    left: 0px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 9px;  
+    background-color: #1B2631;
+    border: 1px solid var(--COR-BORDA); /*  #FFFF00 */
+    border-radius: 5px 0px 0px 5px;
+    /* left-top, right-top, right-bot, left-bot */
+    width: 75px;  					/* * * * * *ALTERAR */
+    height: 24px;
+}
+
+/* INPUT DERROTAS */
+
+.c_r_derrotas_box {
+    position: relative;
+    background: none;  
+    --COR-BORDA: #5D6D7E;  
+}
+.c_r_derrotas_box input {
+    padding-left: 85px; 			 /* * * * * *ALTERAR */
+    font-size: 14px;
+    width: 130px; 					/* * * * * *ALTERAR */
+    height: 35px;
+    color: #FFFF00;
+    font-weight: bold;
+    background-color: black;
+    border: 1px solid var(--COR-BORDA);   
+    border-radius: 5px 5px 5px 5px;
+    /* left-top, right-top, right-bot, left-bot */
+}
+
+.c_r_derrotas_box input:focus {
+    outline: 0;
+}
+
+.c_r_derrotas_box span {	
+    position: absolute;
+    left: 0px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 9px;  
+    background-color: #1B2631;
+    border: 1px solid var(--COR-BORDA); /*  #FFFF00 */
+    border-radius: 5px 0px 0px 5px;
+    /* left-top, right-top, right-bot, left-bot */
+    width: 75px;  					/* * * * * *ALTERAR */
+    height: 24px;
+}
+
+/* INPUT APROV */
+
+.c_r_aprov_box {
+    position: relative;
+    background: none;  
+    --COR-BORDA: #5D6D7E;  
+}
+.c_r_aprov_box input {
+    padding-left: 70px; 			 /* * * * * *ALTERAR */
+    font-size: 14px;
+    width: 130px; 					/* * * * * *ALTERAR */
+    height: 35px;
+    color: #FFFF00;
+    font-weight: bold;
+    background-color: black;
+    border: 1px solid var(--COR-BORDA);   
+    border-radius: 5px 5px 5px 5px;
+    /* left-top, right-top, right-bot, left-bot */
+}
+
+.c_r_aprov_box input:focus {
+    outline: 0;
+}
+
+.c_r_aprov_box span {	
+    position: absolute;
+    left: 0px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 9px;  
+    background-color: #1B2631;
+    border: 1px solid var(--COR-BORDA); /*  #FFFF00 */
+    border-radius: 5px 0px 0px 5px;
+    /* left-top, right-top, right-bot, left-bot */
+    width: 60px;  					/* * * * * *ALTERAR */
+    height: 24px;
+}
+
+/* INPUT RANK CFN */
+
+.c_r_rankcfn_box {
+    position: relative;
+    background: none;  
+    --COR-BORDA: #5D6D7E;  
+}
+.c_r_rankcfn_box input {
+    padding-left: 85px; 			 /* * * * * *ALTERAR */
+    font-size: 14px;
+    width: 145px; 					/* * * * * *ALTERAR */
+    height: 35px;
+    color: #FFFF00;
+    font-weight: bold;
+    background-color: black;
+    border: 1px solid var(--COR-BORDA);   
+    border-radius: 5px 5px 5px 5px;
+    /* left-top, right-top, right-bot, left-bot */
+}
+
+.c_r_rankcfn_box input:focus {
+    outline: 0;
+}
+
+.c_r_rankcfn_box span {	
+    position: absolute;
+    left: 0px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 9px;  
+    background-color: #1B2631;
+    border: 1px solid var(--COR-BORDA); /*  #FFFF00 */
+    border-radius: 5px 0px 0px 5px;
+    /* left-top, right-top, right-bot, left-bot */
+    width: 75px;  					/* * * * * *ALTERAR */
+    height: 24px;
+}
+
+
+
+/* # # # # # # # # # # # # # # # # # # # # # # # # # */
+
+
+/* LISTA PLAYERS */
+
+.c_r_list_player {
+   /* position: absolute; */
+}
+
+.c_r_list_player select {
+   background-color: #1B2631;
+   color: white;
+   padding-left: 10px;
+   width: 100px;
+   height: 35px;
+   /* border: none; */
+   border: 1px solid #5D6D7E;
+   font-size: 12px;
+}
+
+/* LISTA BONECOS # # # # # # # # # # # # # # # # # # # # # # # # # */
+
+.c_r_list_boneco {
+   /* position: absolute; */
+}
+
+.c_r_list_boneco select {
+   background-color: #1B2631;
+   color: white;
+   padding-left: 10px;
+   width: 100px;
+   height: 35px;
+   /* border: none; */
+   border: 1px solid #5D6D7E;
+   font-size: 12px;
+}
+
+/* LISTA NIVEL # # # # # # # # # # # # # # # # # # # # # # # # # */
+
+.c_r_list_nivel {
+   /* position: absolute; */
+}
+
+.c_r_list_nivel select {
+   background-color: #1B2631; /* Azul fraco: #1A5276 */
+   color: white;
+   padding-left: 10px;
+   width: 200px;
+   height: 35px;
+   /* border: none; */
+   border: 1px solid #5D6D7E;
+   font-size: 12px;
+}
+
+.c_r_list_nivel option.bronze {
+   color: #D0834C;
+   /* background-color: #F7DC6F; */
+}
+
+.c_r_list_nivel option.prata {
+   color: #77B1C2;
+   /* background-color: #F7DC6F; */
+}
+
+.c_r_list_nivel option.ouro {
+   color: #F0DB22;
+   /* background-color: #F7DC6F; */
+}
+
+.c_r_list_nivel option.platina {
+   color: #BFBFBE;
+   /* background-color: #F7DC6F; */
+}
+
+
+/* BUTTONS # # # # # # # # # # # # # # # # # # # # # # # # # */
+
+.c_r_btn_save,
+.c_r_btn_update,
+.c_r_btn_clean,
+.c_r_upData {
+	background-color:#1B2631;
+	color:#58D68D;
+  border: 1px solid #5D6D7E;
+	font-family:Trebuchet MS;
+	font-size:12px;
+	/* padding:5px 10px; */
+	text-decoration:none;
+}
+
+.c_r_btn_save,
+.c_r_btn_update,
+.c_r_btn_clean,
+.c_r_upData {
+	padding:5px 10px;
+}
+
+.c_r_upData {
+  padding:5px 5px;
+}
+
+.c_r_btn_save:hover:not([disabled]),
+.c_r_btn_update:hover:not([disabled]),
+.c_r_btn_clean:hover:not([disabled]),
+.c_r_upData:hover:not([disabled]) {
+  color:#FFFF00;
+  border: 1px solid #FFFF00;
+}
+
+.c_r_btn_save:focus,
+.c_r_btn_update:focus,
+.c_r_btn_clean:focus,
+.c_r_upData:focus {
+  outline:0;
+}
+
+.c_r_btn_save:disabled,
+.c_r_btn_update:disabled,
+.c_r_btn_clean:disabled,
+.c_r_upData:disabled {
+  border:none;
+  opacity: 0.5;
+}
+
+/* MESSAGES # # # # # # # # # # # # # # # # # # # # # # # # # */
+
+.c_r_Messages {
+   background-color:#D6DBDF;
+   color: black;
+   border: 1px solid red;
+   width: 300px;
+   height: 30px;
+}
+
+.c_r_Resposta {
+   background-color:#D6DBDF;
+   color: black;
+   border: 1px solid red;
+   width: 300px;
+   height: 30px;
+}
+
+/* DESTAQUES # # # # # # # # # # # # # # # # # # # # # # # # # */
+
+#c_DESTAQUES {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 720px;
+  /* background-color: orange; */
+  border: 1px solid var(--COR-BORDA);   
+}
+#c_DESTAQUE > #r_DestaqueA { order: 1; }
+#c_DESTAQUE > #r_DestaqueB { order: 2; }
+
+:root {
+--AZUL-FORTE: #1B2631;
+--AZUL-MEDIO: #34495E;
+--AZUL-FRACO: #1A5276;
+}
+.c_r_DestaqueA,
+.c_r_DestaqueB {
+  background-color: var(--AZUL-MEDIO);
+  border: 1px solid #5D6D7E;
+  border-radius: 5px;
+  width: 350px;
+  height: auto;
+	font-size: 12px; 
+	/* color: #F5B041; */
+}
+.c_r_TituloDestaques,
+.c_r_TituloRankSolo {
+  /* border: 1px solid #5D6D7E; */
+  border: 1px solid #5D6D7E;
+  border-radius: 5px;
+  width: 720px;
+  height: 30px;
+  color: #FFFF00;
+  font-size: 16px;
+}
+.c_r_TitDesk {
+	color: #58D68D;
+  text-align: center;
+  background-color: var(--AZUL-FORTE);
+  border-radius: 5px;
+  width: auto;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}  
+.c_r_DeskTextA {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 15px;
+	line-height: 1.6;
+  text-align: justify;
+}  
+.c_r_DeskTextB {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 15px;
+	line-height: 1.6;
+}  
+TitDesk {
+	color: #FFC30F;
+}  
+
+/* TABELA # # # # # # # # # # # # # # # # # # # # # # # # # */
+
+table.Tab_Unica {
+  /* background-color: black; */
+  width: 1020px;
+}
+
+table.Tab_Unica tbody td {
+  font-size: 12px;
+}
+
+table.Tab_Unica td#Tab_Col_A {
+  /* background-color: green; */
+  width: 750px;
+  padding-left: 10px;
+  vertical-align: top;
+}
+
+table.Tab_Unica td#Tab_Col_B {
+  background-color: orange;
+  width: 270px;
+  padding-left: 10px;
+  vertical-align: top;
+}
+
+/* UPDATES # # # # # # # # # # # # # # # # # # # # # # # # # */
+
+TO-DO {
+	font-size: 20px;
+	color: #F5B041;
+}
+
+WORKING {
+	font-size: 20px;
+	color: yellow;
+}
+
+CHECK {
+	font-size: 20px;
+	color: #52BE80;
+}

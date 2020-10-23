@@ -1,0 +1,1201 @@
+
+body { 
+  color: #FDFEFE;
+  background-color: var(--AZUL-FRACO);
+  /* background: linear-gradient(to right,#1A5276, #1A5276, #1B2631); */
+  /* background: linear-gradient(to right, var(--AZUL-FRACO) 620px, var(--AZUL-FORTE) 200px); */
+  font-family: Trebuchet MS !important;
+  font-size: 12px;
+  margin: 0 !important;
+}
+
+:root {
+  --COR-BORDA: #5D6D7E;
+  --COR-BORDA-NICK: #364d63;
+  --AZUL-FORTE: #1B2631;
+  --AZUL-MEDIO: #34495E;
+  --AZUL-FRACO: #1A5276;
+  --LUTAS-VERDE: #58D68D;
+  --LUTAS-LARANJA: #F5B041;
+  /* var(--COR-BORDA) */
+}
+
+.c_r_showRank {
+   /* top: 0; */
+}
+
+#c_RANK_update_GOD {
+  width: 720px;
+  background-color: #1B2631;   
+  border: 1px solid #5D6D7E;
+}
+
+#c_RANK_update {
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  
+  width: 720px;
+  /* height: 120px; */
+  /* height: 100%; */
+  /* border: 1px solid #5D6D7E; */ 
+  /* background-color: #1B2631; */
+}
+
+#c_RANK_update > #r_RANK_pos { order: 1; }
+#c_RANK_update > #r_RANK_pts { order: 2; }
+#c_RANK_update > #r_RANK_img { order: 3; }
+#c_RANK_update > #r_RANK_lut { order: 4; }
+
+#r_RANK_pos {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  align-content: center;
+  width: 70px;
+  /* border: 1px solid orange; */
+  height: 110px;
+}
+#id_pos {
+  /* background-color: green; */
+  font-size: 46px;
+  margin-top: 20px;
+}
+#id_pos_up {
+  /* background-color: green; */
+  /* margin-bottom: 10px; */
+}
+
+
+#r_RANK_pts {
+  width: 290px;
+  /* border: 1px solid orange; */
+  height: 110px;
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-end; */
+}
+
+#c_RANK_col2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 267px;
+  height: 85px;
+  /* background-color: green; */
+  flex-wrap: wrap;
+  margin: auto;
+}
+#c_RANK_col2 > #id_nick    { order: 1; }
+#c_RANK_col2 > #id_pontos  { order: 2; }
+#c_RANK_col2 > #id_boneco  { order: 3; }
+#c_RANK_col2 > #id_rankcfn { order: 4; }
+
+#id_nick {
+  background-color: #34495E;
+  width: 262px;
+  height: 24px;
+  border-radius: 5px; 
+  
+  padding-left: 5px;
+  
+  display: flex;
+  align-items: center;
+  
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFF00;
+}
+
+#id_pontos {
+  background-color: #34495E;
+  width: 154px;
+  height: 24px;
+  border-radius: 5px; 
+  
+  padding-left: 5px;
+  padding-right: 5px;
+  
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+}
+
+#id_pontos_New {
+}
+
+#id_pontos_Old {
+  color: #B3B6B7;
+}
+
+#id_boneco {
+  background-color: #34495E;
+  width: 99px;
+  height: 24px;
+  border-radius: 5px; 
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#id_rankcfn {
+  background-color: #34495E;
+  width: 262px;
+  height: 24px;
+  border-radius: 5px; 
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+}
+
+#r_RANK_img {
+  display: flex;
+  align-items: center;
+  width: 190px;
+  /* border: 1px solid orange; */
+  height: 110px;
+}
+#id_img {
+  background-color: #34495E;
+  width: 166px;
+  height: 80px;
+  margin: auto;
+  border-radius: 5px; 
+
+  background-size: 127px 59px, 100px 82px;
+  background-repeat: no-repeat;
+  background-position: top right, bottom left;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+#id_img_player {
+  padding-bottom: 5px;
+  padding-right: 10px;
+}
+
+#r_RANK_lut {
+  display: flex;
+  align-items: center;
+  width: 170px;
+  height: 110px;
+  /* border: 1px solid orange; */
+}
+
+#c_RANK_col4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 142px;
+  height: 82px;
+  /* background-color: green; */
+  flex-wrap: wrap;
+  margin: auto;
+}
+#c_RANK_col4 > #id_lut_tit { order: 1; }
+#c_RANK_col4 > #id_lut_pts { order: 2; }
+#c_RANK_col4 > #id_vit_tit { order: 3; }
+#c_RANK_col4 > #id_vit_pts { order: 4; }
+#c_RANK_col4 > #id_der_tit { order: 5; }
+#c_RANK_col4 > #id_der_pts { order: 6; }
+#c_RANK_col4 > #id_apr_tit { order: 7; }
+#c_RANK_col4 > #id_apr_pts { order: 8; }
+
+#id_lut_tit,
+#id_vit_tit,
+#id_der_tit,
+#id_apr_tit  {
+  /* text-align: right; */
+  padding-right: 5px;  
+  background-color: #34495E;
+  /* border: 1px solid #1B2631; */
+  border-radius: 5px;
+  width: 70px;
+  height: 18px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#id_lut_pts,
+#id_vit_pts,
+#id_der_pts,
+#id_apr_pts {
+  /* text-align: left; */
+  padding-left: 5px;
+  background-color: #34495E;
+  /* border: 1px solid #1B2631; */
+  border-radius: 5px;
+  width: 60px;
+  height: 18px;
+  
+  display: flex;
+  align-items: center;
+}
+
+#id_vit_tit,
+#id_vit_pts{
+  color: #58D68D;
+}
+
+#id_der_tit,
+#id_der_pts{
+  color: #F5B041;
+}
+
+/* INPUTS # # # # # # # # # # # # # # # # # # # # # # # # #  */
+
+#THE_GOD_FORM {
+  display: none;
+  width: 260px; 
+  height: 390px; /* TAMANHO MAXIMO */
+  /* background-color: green; */
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+#c_BLOCO_Father {
+  width: 260px; 
+  height:215px;
+  background-color: black;
+  border-radius: 10px;
+  border: 1px solid var(--COR-BORDA);
+
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+#c_BLOCO {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: black;
+  
+  border-radius: 10px;
+  width: 260px; 
+  height: 200px; /* TAMANHO MAXIMO */
+}
+#c_BLOCO > #r_nick_box      { order: 0; }
+#c_BLOCO > #r_pontos_box    { order: 1; }
+#c_BLOCO > #r_rankcfn_box   { order: 2; }
+#c_BLOCO > #r_lutas_box     { order: 3; }
+#c_BLOCO > #r_vitorias_box  { order: 4; }
+#c_BLOCO > #r_derrotas_box  { order: 5; }
+#c_BLOCO > #r_aprov_box     { order: 6; }
+#c_BLOCO > #r_player        { order: 7; }
+#c_BLOCO > #r_boneco        { order: 8; }
+#c_BLOCO > #r_nivel         { order: 9; }
+
+#c_BLOCO_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  height: 50px; /* TAMANHO MAXIMO */
+  background-color: black;
+  border: 1px solid var(--COR-BORDA);
+  border-radius: 10px;
+}
+
+#c_BLOCO_msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  height: 80px; /* TAMANHO MAXIMO */
+  background-color: black;
+  border: 1px solid var(--COR-BORDA);
+  border-radius: 10px;
+}
+
+.c_r_nick_box,
+.c_r_pontos_box,
+.c_r_rankcfn_box,
+.c_r_lutas_box,
+.c_r_vitorias_box,
+.c_r_derrotas_box,
+.c_r_aprov_box {
+    /* position: relative; */
+    /* position: absolute; */ 
+}
+.c_r_nick_box input,
+.c_r_pontos_box input,
+.c_r_rankcfn_box input,
+.c_r_lutas_box input,
+.c_r_vitorias_box input,
+.c_r_derrotas_box input,
+.c_r_aprov_box input { 
+    /* position: relative; */
+    /* padding-left: 75px; */
+    font-size: 14px;
+    /* width: 245px; */
+    height: 25px;
+    color: #FFFF00;
+    font-weight: bold;
+    /* background-color: transparent; */
+    background-color: var(--AZUL-FORTE);
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    /* left-top, right-top, right-bot, left-bot */
+    /* border: 1px solid var(--COR-BORDA); */
+}
+
+.c_r_nick_box input { 
+  width: 210px;
+  padding-left: 45px;
+}
+.c_r_pontos_box input { 
+  width: 105px;
+  padding-left: 60px;
+}
+.c_r_rankcfn_box input { 
+  width: 130px;
+  padding-left: 75px;
+}
+.c_r_lutas_box input { 
+  width: 95px;
+  padding-left: 55px;
+}
+.c_r_vitorias_box input { 
+  width: 105px;
+  padding-left: 65px;
+}
+.c_r_derrotas_box input { 
+  width: 110px;
+  padding-left: 70px;
+}
+.c_r_aprov_box input { 
+  width: 110px;
+  padding-left: 60px;
+}
+
+.c_r_nick_box input:focus,
+.c_r_pontos_box input:focus,
+.c_r_rankcfn_box input:focus,
+.c_r_lutas_box input:focus,
+.c_r_vitorias_box input:focus,
+.c_r_derrotas_box input:focus,
+.c_r_aprov_box input:focus {
+    outline: 0;
+}
+
+.c_r_nick_box span,
+.c_r_pontos_box span,
+.c_r_rankcfn_box span,
+.c_r_lutas_box span,
+.c_r_vitorias_box span,
+.c_r_derrotas_box span,
+.c_r_aprov_box span {	
+    position: absolute;
+    /* background-color: greenyellow; */
+    /* background-color: transparent; */
+    background-color: var(--AZUL-FORTE);
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    /* left-top, right-top, right-bot, left-bot */
+    width: auto;
+    height: 25px;
+    padding-right: 5px;
+    padding-left: 5px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* # # # # # # # # # # # # # # # # # # # # # # # # # */
+
+/* LISTA PLAYERS */
+
+.c_r_list_player {
+   /* position: absolute; */
+}
+
+.c_r_list_player select {
+   background-color: #1B2631;
+   color: white;
+   padding-left: 10px;
+   width: 100px;
+   height: 20px;
+   /* border: none; */
+   border: 1px solid #5D6D7E;
+   font-size: 12px;
+}
+
+/* LISTA BONECOS # # # # # # # # # # # # # # # # # # # # # # # # # */
+
+.c_r_list_boneco {
+   /* position: absolute; */
+}
+
+.c_r_list_boneco select {
+   background-color: #1B2631;
+   color: white;
+   padding-left: 10px;
+   width: 100px;
+   height: 20px;
+   /* border: none; */
+   border: 1px solid #5D6D7E;
+   font-size: 12px;
+}
+
+/* LISTA NIVEL # # # # # # # # # # # # # # # # # # # # # # # # # */
+
+.c_r_list_nivel {
+   /* position: absolute; */
+}
+
+.c_r_list_nivel select {
+   background-color: #1B2631; /* Azul fraco: #1A5276 */
+   color: white;
+   padding-left: 10px;
+   width: 200px;
+   height: 20px;
+   /* border: none; */
+   border: 1px solid #5D6D7E;
+   font-size: 12px;
+}
+
+.c_r_list_nivel option.bronze {
+   color: #D0834C;
+   /* background-color: #F7DC6F; */
+}
+
+.c_r_list_nivel option.prata {
+   color: #77B1C2;
+   /* background-color: #F7DC6F; */
+}
+
+.c_r_list_nivel option.ouro {
+   color: #F0DB22;
+   /* background-color: #F7DC6F; */
+}
+
+.c_r_list_nivel option.platina {
+   color: #BFBFBE;
+   /* background-color: #F7DC6F; */
+}
+
+
+/* BUTTONS # # # # # # # # # # # # # # # # # # # # # # # # # */
+
+/* BUTTONS _ FORM */
+
+.c_r_btn_save,
+.c_r_btn_update,
+.c_r_btn_clean,
+.c_r_upData {
+	background-color:#1B2631;
+	color:#58D68D;
+  border: 1px solid #5D6D7E;
+	font-family:Trebuchet MS;
+	font-size:12px;
+	/* padding:5px 10px; */
+	text-decoration:none;
+}
+
+.c_r_btn_save,
+.c_r_btn_update,
+.c_r_btn_clean,
+.c_r_upData {
+	padding:5px 10px;
+}
+
+.c_r_upData {
+  padding:5px 5px;
+}
+
+.c_r_btn_save:hover:not([disabled]),
+.c_r_btn_update:hover:not([disabled]),
+.c_r_btn_clean:hover:not([disabled]),
+.c_r_upData:hover:not([disabled]) {
+  color:#FFFF00;
+  border: 1px solid #FFFF00;
+}
+
+.c_r_btn_save:focus,
+.c_r_btn_update:focus,
+.c_r_btn_clean:focus,
+.c_r_upData:focus {
+  outline:0;
+}
+
+.c_r_btn_save:disabled,
+.c_r_btn_update:disabled,
+.c_r_btn_clean:disabled,
+.c_r_upData:disabled {
+  border:none;
+  opacity: 0.5;
+}
+
+.c_r_upData:disabled {
+  /* border:none; */
+  opacity: 0.5;
+  border: 1px solid var(--LUTAS-VERDE);
+}
+
+/* MESSAGES # # # # # # # # # # # # # # # # # # # # # # # # # */
+
+.c_r_Messages,
+.c_r_Resposta {
+  background-color: var(--AZUL-FORTE);
+  border-radius: 5px; 
+  width: 200px;
+  height: 20px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c_r_Messages {
+  color: white;
+ }
+
+.c_r_Resposta {
+  color: yellow;
+ }
+
+/* EM DESENVOLVIMENTO # # # # # # # # # # # # # # # # # # # # # # # # # */
+
+#r_Dev {
+  width: 720px;
+  height: 50px;
+  color: white;
+  font-size: 26px;
+  border: none;
+  background-color: transparent;
+  opacity: 0.3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* DESTAQUES # # # # # # # # # # # # # # # # # # # # # # # # # */
+
+#c_DESTAQUES {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 720px;
+  /* background-color: orange; */
+  /* border: 1px solid var(--COR-BORDA); */ 
+}
+#c_DESTAQUE > #r_DestaqueA { order: 1; }
+#c_DESTAQUE > #r_DestaqueB { order: 2; }
+
+.c_r_DestaqueA,
+.c_r_DestaqueB {
+  background-color: var(--AZUL-MEDIO);
+  border: 1px solid #5D6D7E;
+  border-radius: 5px;
+  width: 350px;
+  height: auto;
+	font-size: 12px; 
+	/* color: #F5B041; */
+}
+
+#r_TituloAmarelo {
+  width: 720px;
+  height: 40px;
+  /* background-color: orange; */
+  border-top: 2px solid #FFCC00;
+  color: #FFCC00;
+  font-size: 18px;
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+#r_BonusPoints {
+  width: 420px;
+  height: 30px;
+  /* background-color: green; */
+  color: white;
+  font-size: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#COLB_GOD {
+  width: 310px; 
+  height: auto;
+  /* background-color: dodgerblue; */
+  /* border-bottom: 2px solid black; */
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: flex-end; /* CENTRO DA COLUNA */
+  /* align-content: flex-start; */
+}
+
+#r_TituloYellow {
+  width: 290px;
+  height: 40px;
+  /* background-color: orange; */
+  border-top: 2px solid #FFCC00;
+  color: #FFCC00;
+  font-size: 18px;
+  margin-right: 10px;
+
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: center; */
+}
+
+#img_col_B_div {
+  /* display: block; */
+  width: 270px; 
+  height: 363px;
+  /* background-color: green; */
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+TITULO_COLA {
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+TITULO_COLB {
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+.c_r_TitDesk {
+	color: #58D68D;
+  text-align: center;
+  background-color: var(--AZUL-FORTE);
+  border-radius: 5px;
+  width: auto;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}  
+.c_r_DeskTextA {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 15px;
+	line-height: 1.6;
+  text-align: justify;
+}  
+.c_r_DeskTextB {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 15px;
+	line-height: 1.6;
+}  
+TitDesk {
+	color: #FFC30F;
+}  
+
+/* RANK TEAM # # # # # # # # # # # # # # # # # # # # # # # # # */
+
+#c_TEAM_GOD {
+  width: 720px;
+  height: auto;
+  background-color: var(--AZUL-MEDIO);   
+  border: 1px solid #5D6D7E;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#r_TEAM_box1 {
+  /* border: 1px solid orange; */
+  background-color: var(--AZUL-FORTE);
+  border-radius: 5px;
+  width: 330px;
+  /* height: auto; */
+  
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+#r_TEAM_box2 {
+  /* border: 1px solid gold; */
+  background-color: var(--AZUL-FORTE);
+  border-radius: 5px;
+  width: 330px;
+  height: auto;
+  
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+#r_TEAM_box1_line1 {
+  /* background-color: green; */
+  /* border: 1px solid orange; */
+  width: auto;
+  height: auto;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#c_Team_Pos {
+  width: 60px;
+  height: 65px;
+  color: black;
+  /* border: 1px solid #FFFF00; */
+  /* background-color: grey; */
+  border-radius: 5px;
+  font-size: 32px;
+  margin-top: 5px;
+  margin-left: 5px;
+  
+  background-image: url("/rank/img/1st_cup.png");
+  background-size: 60px 65px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#c_Team_Pos2 {
+  width: 60px;
+  height: 65px;
+  color: black;
+  /* border: 1px solid #FFFF00; */
+  /* background-color: grey; */
+  border-radius: 5px;
+  font-size: 32px;
+  margin-top: 5px;
+  margin-left: 5px;
+  
+  background-image: url("/rank/img/2nd_cup.png");
+  background-size: 60px 65px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#c_Team_pts2,
+#c_Team_pts {
+  width: 120px;
+  height: 50px;
+  /* background-color: beige; */
+  border-radius: 5px; 
+  font-size: 28px;
+  margin-top: 5px;
+  margin-left: 0px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#c_Team_pts {
+  color: gold;
+}
+#c_Team_pts2 {
+  color: silver;
+}
+
+#c_Team_nick2,
+#c_Team_nick {
+  width: 120px;
+  height: 50px;
+  /* background-color: cadetblue; */
+  border: 1px solid var(--COR-BORDA-NICK);
+  border-radius: 5px; 
+  font-size: 28px;
+  color: grey;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 1px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#r_TEAM_box1_line2 {
+  /* background-color: dodgerblue; */
+  /* border: 1px solid orange; */
+  width: auto;
+  height: auto;
+  
+  margin-top: 10px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#c_Team_lut_T {
+  width: 78px;
+  height: 30px;
+  /* background-color: beige; */
+  border-bottom: 1px solid white;
+  /* border-radius: 5px; */ 
+  font-size: 14px;
+  color: white;
+  /* margin-left: 5px; */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#c_Team_vit_T {
+  width: 78px;
+  height: 30px;
+  /* background-color: beige; */
+  border-bottom: 1px solid var(--LUTAS-VERDE);
+  /* border-radius: 5px; */
+  font-size: 14px;
+  color: var(--LUTAS-VERDE);
+  /* margin-left: 5px; */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#c_Team_der_T {
+  width: 78px;
+  height: 30px;
+  /* background-color: beige; */
+  border-bottom: 1px solid var(--LUTAS-LARANJA);
+  /* border-radius: 5px; */
+  font-size: 14px;
+  color: var(--LUTAS-LARANJA);
+  /* margin-left: 5px; */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#c_Team_apr_T {
+  width: 78px;
+  height: 30px;
+  /* background-color: beige; */
+  border-bottom: 1px solid white;
+  /* border-radius: 5px; */
+  font-size: 14px;
+  color: white;
+  /* margin-left: 5px; */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* */
+
+#r_TEAM_box1_line3 {
+  /* background-color: dodgerblue; */
+  /* border: 1px solid orange; */
+  width: auto;
+  height: auto;
+  
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#c_Team_lut2,
+#c_Team_lut {
+  width: 82px;
+  height: 30px;
+  /* background-color: beige; */
+  /* border: 1px solid var(--COR-BORDA); */
+  border-radius: 5px; 
+  font-size: 18px;
+  color: white;
+  /* margin-left: 5px; */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#c_Team_vit2,
+#c_Team_vit {
+  width: 82px;
+  height: 30px;
+  /* background-color: bisque; */
+  /* border: 1px solid var(--COR-BORDA); */
+  border-radius: 5px; 
+  font-size: 18px;
+  color: var(--LUTAS-VERDE);
+  /* margin-left: 5px; */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#c_Team_der2,
+#c_Team_der {
+  width: 82px;
+  height: 30px;
+  /* background-color: gainsboro; */
+  /* border: 1px solid var(--COR-BORDA); */
+  border-radius: 5px; 
+  font-size: 18px;
+  color: var(--LUTAS-LARANJA);
+  /* margin-left: 5px; */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#c_Team_apr2,
+#c_Team_apr {
+  width: 90px;
+  height: 30px;
+  /* background-color: greenyellow; */
+  /* border: 1px solid var(--COR-BORDA); */
+  border-radius: 5px; 
+  font-size: 18px;
+  color: white;
+  /* margin-left: 5px; */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* UNLOCK # # # # # # # # # # # # # # # # # # # # # # # # # */
+
+#r_BonusPoints_Solo {
+  width: 450px;
+  height: 30px;
+  /* background-color: green; */
+  color: white;
+  font-size: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#r_BonusPoints_Solo input { 
+    /* position: relative; */
+    /* padding-left: 75px; */
+    font-size: 16px;
+    text-align: center;
+    height: 25px;
+    color: #FFFF00;
+    /* background-color: transparent; */
+    background-color: var(--AZUL-FORTE);
+    border: none;
+    /* border-radius: 5px 5px 5px 5px; */
+    /* left-top, right-top, right-bot, left-bot */
+    border: 1px solid var(--COR-BORDA);
+    margin-left: 15px;
+}
+#r_BonusPoints_Solo input { 
+  width: 40px;
+}
+#r_BonusPoints_Solo input:focus {
+    outline: 0;
+}
+
+/* BUTTONS _ HIDE-ADD */
+
+.c_r_btn_unlock,
+.c_r_btn_add,
+.c_r_btn_hide {
+	background-color: #1B2631;
+	color: #FFFF00;
+  border: 1px solid #5D6D7E;
+	font-family:Trebuchet MS;
+	font-size:12px;
+	/* padding:5px 10px; */
+	text-decoration:none;
+}
+.c_r_btn_unlock,
+.c_r_btn_add,
+.c_r_btn_hide {
+	padding:5px 10px;
+}
+
+.c_r_btn_unlock {
+	margin-left: 5px;
+}
+.c_r_btn_hide {
+	margin-left: 20px;
+}
+.c_r_btn_add {
+	margin-left: 5px;
+}
+
+
+.c_r_btn_unlock:hover:not([disabled]),
+.c_r_btn_add:hover:not([disabled]),
+.c_r_btn_hide:hover:not([disabled]) {
+  color: #58D68D;
+  border: 1px solid #58D68D;
+}
+.c_r_btn_unlock,
+.c_r_btn_add:focus,
+.c_r_btn_hide:focus {
+  outline:0;
+}
+.c_r_btn_unlock:disabled,
+.c_r_btn_add:disabled,
+.c_r_btn_hide:disabled {
+  border:none;
+  opacity: 0.5;
+}
+
+
+/* TABELA DIVIDE COLUNA B # # # # # # # # # # # # # # # # # # # # # # # # # */
+
+table.Tab_Coluna_B {
+  /* background-color: beige; */
+  width: 100%;
+  border: none;
+  margin-top: 7px;
+}
+
+table.Tab_Coluna_B td#Linha_1 {
+  /* background-color: beige; */
+  height: 620px;
+  vertical-align: top;
+  margin-top: 0;
+}
+
+table.Tab_Coluna_B td#Linha_2 {
+  /* background-color: greenyellow; */
+  height: 100%;
+  vertical-align: top;
+  margin-top: 0;
+}
+
+/* TABELA # # # # # # # # # # # # # # # # # # # # # # # # # */
+
+table.Tab_Unica {
+  /* background-color: black; */
+  width: 1060px;
+}
+
+table.Tab_Unica tbody td {
+  font-size: 12px;
+}
+
+table.Tab_Unica td#Tab_Col_A {
+  /* background-color: green; */
+  width: 750px;
+  padding-left: 10px;
+  vertical-align: top;
+}
+
+table.Tab_Unica td#Tab_Col_B {
+  /* text-align: center; */
+  /* background-color: orange; */
+  width: 310px;
+  /* padding-left: 10px; */
+  vertical-align: top;
+}
+
+/* UPDATES # # # # # # # # # # # # # # # # # # # # # # # # # */
+
+TO-DO {
+	font-size: 20px;
+	color: #F5B041;
+}
+
+WORKING {
+	font-size: 20px;
+	color: yellow;
+}
+
+CHECK {
+	font-size: 20px;
+	color: #52BE80;
+}
+
+/* IMG # # # # # # # # # # # # # # # # # # # # # */
+
+#img_topo {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+#img_footer {
+  /* opacity: 0.5; */
+
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+#img_Form {
+  /* background-color: grey; */
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+#img_comic {
+  /* position: absolute; */
+}
+
+/* FOOTER (WRAPPER) # # # # # # # # # # # # # # # # # # # # # */
+
+TEXTOFOOTER {
+  /* color: #00FF00; */
+  color: var(--LUTAS-VERDE);
+}
+
+div.FOOTER_wrapper {
+  min-height: 100%;
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -30px;
+}
+
+div.FOOTER_push {
+  height: 50px;
+}
+
+div.FOOTER_footer {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 30px;
+  padding-left: 20px;    
+	font-size: 12px;
+  background-color: #000000;
+  /* color: black; */
+  opacity:0.8;
+}
